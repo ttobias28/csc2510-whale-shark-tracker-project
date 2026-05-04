@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h2>🦈 Log a New Whale Shark Sighting</h2>
+  <form method="POST" action="/add">
+    <label>Location <input type="text" name="location" placeholder="e.g. Ningaloo Reef, Australia" required></label>
+    <label>Date <input type="date" name="date" required></label>
+    <label>Estimated Size (meters) <input type="number" name="size_meters" step="0.1" min="3" max="20" placeholder="e.g. 8.5" required></label>
+    <label>Observer Name <input type="text" name="observer" placeholder="Your name or organization" required></label>
+    <label>Notes (optional) <textarea name="notes" rows="3" placeholder="Behavior, conditions..."></textarea></label>
+    <br><button type="submit" class="btn" style="margin-top:14px;">Submit Sighting</button>
+  </form>
+</div>
+{% endblock %}
