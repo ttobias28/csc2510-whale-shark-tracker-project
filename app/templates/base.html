@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🦈 Whale Shark Tracker</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f8ff; }
+    header { background: #0a4a6e; color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+    header h1 { margin: 0; }
+    nav a { color: #a0d8f0; margin-right: 16px; text-decoration: none; font-weight: bold; }
+    .card { background: white; border-radius: 8px; padding: 16px; margin: 10px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    .stat-row { display: flex; gap: 16px; }
+    .stat { flex: 1; background: #e0f4ff; border-radius: 8px; padding: 14px; text-align: center; }
+    .stat h2 { margin: 0; font-size: 2rem; color: #0a4a6e; }
+    .stat p { margin: 4px 0 0; color: #4a7a96; font-size: 13px; }
+    .btn { background: #0a4a6e; color: white; padding: 10px 20px; border: none; border-radius: 6px;
+           cursor: pointer; text-decoration: none; font-size: 15px; display: inline-block; }
+    .btn:hover { background: #1a6a9e; }
+    table { width: 100%; border-collapse: collapse; }
+    th { background: #0a4a6e; color: white; padding: 10px; text-align: left; }
+    td { padding: 9px 10px; border-bottom: 1px solid #e0ecf4; }
+    tr:nth-child(even) td { background: #f0f8ff; }
+    input, textarea { width: 100%; padding: 9px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; margin-top: 4px; }
+    label { font-weight: 600; color: #2d3748; display: block; margin-top: 12px; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🦈 Whale Shark Sighting Tracker</h1>
+  <nav>
+    <a href="/">All Sightings</a>
+    <a href="/add">+ Log a Sighting</a>
+  </nav>
+</header>
+{% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="stat-row">
+  <div class="stat"><h2>{{ stats.count }}</h2><p>Total Sightings</p></div>
+  <div class="stat"><h2>{{ stats.avg_size }}m</h2><p>Avg. Shark Size</p></div>
+  <div class="stat"><h2>{{ stats.max_size }}m</h2><p>Largest Sighting</p></div>
+</div>
+<div class="card" style="margin-top:20px;">
+  <h2>🌊 Logged Sightings</h2>
+  <table>
+    <tr><th>Date</th><th>Location</th><th>Size (m)</th><th>Observer</th><th>Notes</th></tr>
+    {% for s in sightings %}
+    <tr>
+      <td>{{ s.date }}</td>
+      <td>{{ s.location }}</td>
+      <td>🦈 {{ s.size_meters }}</td>
+      <td>{{ s.observer }}</td>
+      <td>{{ s.notes }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+<a href="/add" class="btn" style="margin-top:16px;">+ Log New Sighting</a>
+{% endblock %}
