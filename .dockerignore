@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.github/
+terraform/
+*.md
+.env
+terraform-key.json
