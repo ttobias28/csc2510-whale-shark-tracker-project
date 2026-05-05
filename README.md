@@ -1,4 +1,4 @@
-# 🦈 Whale Shark Sighting Tracker
+# 🦈 Whale Shark Sighting Tracker!!
 
 ## What is this?
 A web application that lets marine researchers and enthusiasts log and track 
